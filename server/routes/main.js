@@ -86,8 +86,7 @@ router.post('/search', async (req, res) => {
 
     const data = await Post.find({
       $or: [
-        { title: { $regex: new RegExp(searchNoSpecialChar, 'i') }},
-        { body: { $regex: new RegExp(searchNoSpecialChar, 'i') }}
+        { artistName: { $regex: new RegExp(searchNoSpecialChar, 'i') }}
       ]
     });
 
