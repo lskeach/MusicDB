@@ -10,7 +10,7 @@ router.get('', async (req, res) => {
   try {
     const locals = {
       title: "Music DB",
-      description: "Simple Blog created with NodeJs, Express & MongoDb."
+      description: "Database created with NodeJs, Express & MongoDB."
     }
 
     let perPage = 3;
@@ -55,7 +55,7 @@ router.get('/post/:id', async (req, res) => {
 
     const locals = {
       title: data.title,
-      description: "Simple Blog created with NodeJs, Express & MongoDb.",
+      description: "Database created with NodeJs, Express & MongoDB.",
     }
 
     res.render('post', { 
